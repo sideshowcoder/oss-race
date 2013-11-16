@@ -1,0 +1,16 @@
+<div class="col-md-6">
+  <div {{bind-attr class="challengerWins:winner"}}>
+    Challenger {{input id="challenger" type="text" value=challengerName action="newFight" placeholder="sideshowcoder"}}
+    {{#if fightEnded }}
+    <div>{{scoreChallenger}}</div>
+    {{/if}}
+  </div>
+</div>
+<div class="col-md-6">
+  <div {{bind-attr class="defenderWins:winner"}}>
+    Defender {{input id="defender" type="text" value=defenderName action="newFight" placeholder="cmeiklejohn"}}
+    {{#if fightEnded }}
+    <div>{{scoreDefender}}</div>
+    {{/if}}
+  </div>
+</div>
